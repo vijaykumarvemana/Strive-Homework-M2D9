@@ -7,11 +7,185 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+   
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+    <div class="container my-5">
+        <section class="mt-8">
+            <div class="jumbotron bg-white">
+                <h2 class="display-4">Image of the page</h2>
+                <img class="img-fluid" src="https://source.unsplash.com/random/1090x350"/>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+              </div>
+    </section>
+   
+    
+
+    <!-- EXERCISE 2
+        Use the Bootstrap Card to contain every album in the favorite list.
+        Use the elements of a card to display nicely the album informations such as album title, artist, year, etc..
+    -->
+    <section>
+        <h3 class="text-center mb-1">Favorite Album List</h3>
+    <div class="container">
+        <div class="row mb-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/100x50"
+                class="card-img-top"
+                alt="..."
+              />
+              <div id="badge" class="text-white text-center">Rock</div>
+              <div class="card-body">
+                <h5 class="card-title">Songs</h5>
+                <p class="card-text text-left">
+                  Some quick example text to build.
+                </p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-secondary">Click</button>
+                  </div>
+                  <span class="text-muted">Duration: 30 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                
+                <img
+                  src="https://source.unsplash.com/random/100x50"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div id="badge" class="text-white text-center">Jazz</div>
+                <div class="card-body">
+                  <h5 class="card-title">Songs</h5>
+                  <p class="card-text text-left">
+                    Some quick example text to build.
+                  </p>
+                  <div
+                    class="
+                      card-body
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <div class="btn-group btn-group-sm me-2">
+                      <button class="btn btn-outline-secondary">Click</button>
+                    </div>
+                    <span class="text-muted">Duration: 20 mins</span>
+                  </div>
+                </div>
+              </div>>
+          </div>
+          <div class="col">
+            <div class="card">
+                <img
+                  src="https://source.unsplash.com/random/100x50"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div id="badge" class="text-white text-center">Pop</div>
+                <div class="card-body">
+                  <h5 class="card-title">Songs</h5>
+                  <p class="card-text text-left">
+                    Some quick example text to build.
+                  </p>
+                  <div
+                    class="
+                      card-body
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <div class="btn-group btn-group-sm me-2">
+                      <button class="btn btn-outline-secondary">Click</button>
+                    </div>
+                    <span class="text-muted">Duration: 40 mins</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+        
+        </section>
+    </div>
+
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on top of it with the genre of the album
+    -->
+
+    <!-- EXERCISE 4
+        Create a section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+    <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked.  
+
+        ##EXTRA##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
+    <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+        the button was elevating itself every time the user hovers onto it.        
+    -->
+
+    <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal+button example)
+        
+        The modal shall contain input fields with (avoid using a <form>):
+        - Track number
+        - Track title
+        - Track duration
+        - Track featuring
+        - Live Track (checkbox)
+
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+
+    <!-- EXERCISE 8
+        The modal should contain 2 buttons at the bottom:
+        - Add => Adds a new track in the tracklist with the data of the input fields.
+        - Close => closes the modal
+
+        https://getbootstrap.com/docs/4.6/components/alerts/
+        [EXTRA] Make the message disappear after 5 seconds
+        https://www.w3schools.com/jsref/met_win_settimeout.asp
+    -->
+
+    <!-- EXERCISE 8
+        Alert the user with a success message when the track gets added, or when a track gets deleted.
+     -->
+
 
   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
